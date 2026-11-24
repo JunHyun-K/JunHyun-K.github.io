@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>JunHyun Kim · UBC</title>
+    <meta name="description" content="JunHyun Kim, undergraduate at the University of British Columbia, working on optimization theory for machine learning." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="JunHyun Kim · UBC" />
+    <meta property="og:description" content="JunHyun Kim, undergraduate at the University of British Columbia, working on optimization theory for machine learning." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      // Apply a saved light/dark choice before the first paint (no effect without JavaScript).
+      try {
+        var t = localStorage.getItem('theme');
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    </script>
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  </head>
+  <body>
+    <main class="page">
+      <!-- About -->
+      <header class="intro" id="about">
+        <div class="intro__text">
+          <h1>JunHyun Kim</h1>
+          <p class="intro__role">Honours Computer Science, Minor in Mathematics · University of British Columbia</p>
+          <p class="intro__bio">
+            I am interested in optimization theory for machine learning: stochastic <span class="nowrap">min–max</span> optimization, adaptive
+            optimization, and the geometry of representations. I am interested in the limits of what optimization methods
+            can guarantee, and in how they actually behave. At UBC, I have been fortunate enough to work with Prof. Ahmet
+            Alacaoglu, Prof. Mark Schmidt and Prof. Christos Thrampoulidis.
+          </p>
+          <p class="intro__links">
+            <a href="mailto:junhyun@student.ubc.ca">junhyun@student.ubc.ca</a> <span class="sep" aria-hidden="true">·</span> <a href="https://scholar.google.com/citations?user=hm9dJHgAAAAJ&amp;hl=en">Google Scholar</a> <span class="sep" aria-hidden="true">·</span> <a href="https://github.com/JunHyun-K">GitHub</a>
+          </p>
+        </div>
+        <img
+          class="portrait"
+          src="/src/assets/portrait_final_336x420.jpg"
+          alt="Portrait of JunHyun Kim"
+          width="112"
+          height="140"
+        />
+      </header>
+
+      <section class="section" id="publications" aria-labelledby="publications-h">
+        <h2 id="publications-h">Publications</h2>
+
+        <div class="group">
+          <h3 class="label">Conference papers</h3>
+          <ol class="pubs">
+            <li class="pub" id="pub-1">
+              <span class="pub__n" aria-hidden="true">[1]</span>
+              <div class="pub__body">
+                <a class="pub__title" href="https://arxiv.org/abs/2602.05531">Solving Stochastic Variational Inequalities without the Bounded Variance Assumption</a>
+                <span class="pub__meta">Ahmet Alacaoglu and <strong>Jun-Hyun Kim</strong> <span class="sep" aria-hidden="true">·</span> <em>ICML 2026</em> <span class="sep" aria-hidden="true">·</span> <a href="https://arxiv.org/abs/2602.05531">arXiv:2602.05531</a> <span class="sep" aria-hidden="true">·</span> <a href="https://openreview.net/forum?id=cHxls6cHDF">OpenReview</a></span>
+                <span class="pub__result">Best-known <span class="math"><i>Õ</i>(<i>ε</i><sup>−4</sup>)</span> oracle complexity for constrained monotone and weak-Minty stochastic VIs, without bounded variance or a bounded domain.</span>
+              </div>
+            </li>
+            <li class="pub" id="pub-2">
+              <span class="pub__n" aria-hidden="true">[2]</span>
+              <div class="pub__body">
+                <a class="pub__title" href="https://arxiv.org/abs/2609.15257">Improving the Last-Iterate Guarantees of Anytime Algorithms for Stochastic Monotone Variational Inequalities</a>
+                <span class="pub__meta"><strong>Jun-Hyun Kim</strong> and Ahmet Alacaoglu <span class="sep" aria-hidden="true">·</span> <em>Under review</em> <span class="sep" aria-hidden="true">·</span> <a href="https://arxiv.org/abs/2609.15257">arXiv:2609.15257</a></span>
+                <span class="pub__result">State-of-the-art anytime last-iterate rate <span class="math"><i>O</i>(<i>t</i><sup>−1/4</sup>)</span> for constrained stochastic monotone VIs with single-call, single-loop method, and the optimal <span class="math"><i>O</i>(<i>t</i><sup>−1/2</sup>)</span> with STORM variance reduction.</span>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="group">
+          <h3 class="label">Workshop papers</h3>
+          <ol class="pubs">
+            <li class="pub" id="pub-3">
+              <span class="pub__n" aria-hidden="true">[3]</span>
+              <div class="pub__body">
+                <a class="pub__title" href="https://openreview.net/forum?id=jgLLtVTu0a">Stochastic Line Search under Nonuniform Smoothness beyond Interpolation</a>
+                <span class="pub__meta"><strong>Jun-Hyun Kim</strong> and Mark Schmidt <span class="sep" aria-hidden="true">·</span> <em>OPT 2026 (NeurIPS workshop)</em> <span class="sep" aria-hidden="true">·</span> <a href="https://openreview.net/forum?id=jgLLtVTu0a">OpenReview</a></span>
+                <span class="pub__result">The first convergence guarantee for stochastic line search without interpolation, under nonuniform smoothness, using the STORM estimator.</span>
+              </div>
+            </li>
+            <li class="pub" id="pub-4">
+              <span class="pub__n" aria-hidden="true">[4]</span>
+              <div class="pub__body">
+                <a class="pub__title" href="https://openreview.net/forum?id=Ri4ZtbSDWs">Increasing-Batch AdGD under Glocal Smoothness</a>
+                <span class="pub__meta"><strong>Jun-Hyun Kim</strong>*, Param Mody*, Curtis Fox and Mark Schmidt <span class="sep" aria-hidden="true">·</span> <em>OPT 2026 (NeurIPS workshop)</em> <span class="sep" aria-hidden="true">·</span> <a href="https://openreview.net/forum?id=Ri4ZtbSDWs">OpenReview</a> <span class="sep" aria-hidden="true">·</span> *equal contribution</span>
+                <span class="pub__result">Increasing-batch adaptive gradient descent for strongly convex problems, with a local rate that depends on the smaller local smoothness constant.</span>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="research" aria-labelledby="research-h">
+        <h2 id="research-h">Research</h2>
+
+        <article class="theme" id="minmax" aria-labelledby="minmax-h">
+          <h3 id="minmax-h">Min–max problems and variational inequalities</h3>
+          <p class="theme__text">
+            Variational inequalities include min–max problems and the equilibrium conditions of games. I study stochastic
+            methods for them when the noise variance can grow with the iterate <a class="cite" href="#pub-1">[1]</a>, and
+            guarantees for the last iterate that hold at every iteration, without a horizon fixed in advance
+            <a class="cite" href="#pub-2">[2]</a>.
+          </p>
+          <!-- Figure 1: drawn by src/figures/figure1.js; hidden when JavaScript is off -->
+          <figure class="figure" id="figure-1" aria-labelledby="figure-1-caption" hidden>
+            <div class="figure__main">
+              <div class="figure__plot">
+                <canvas
+                  class="figure__canvas"
+                  tabindex="0"
+                  role="button"
+                  aria-label="Plot of min over x, max over y of x times y. From the same starting point, gradient descent–ascent without anchoring spirals outward around the solution at the origin, to about twice the starting distance, while the method with Halpern anchoring moves to the solution. Click the plot to start both methods from a new point, or press Enter to replay."
+                ></canvas>
+              </div>
+              <div class="figure__bar">
+                <ul class="figure__legend">
+                  <li><span class="swatch swatch--diverge" aria-hidden="true"></span>Without anchoring</li>
+                  <li><span class="swatch swatch--accent" aria-hidden="true"></span>With Halpern anchoring</li>
+                </ul>
+              </div>
+            </div>
+            <div class="figure__side">
+              <figcaption class="figure__caption" id="figure-1-caption"><strong>Figure 1.</strong> Gradient descent–ascent with Halpern anchoring, on a bilinear problem.</figcaption>
+            </div>
+          </figure>
+        </article>
+
+        <article class="theme" id="stepsizes" aria-labelledby="stepsizes-h">
+          <h3 id="stepsizes-h">Step sizes from stochastic information</h3>
+          <p class="theme__text">
+            A line search adapts the step size to local curvature, but a step accepted on one sample need not decrease the
+            full objective. I study when step sizes chosen from samples still come with guarantees: a line search with the
+            STORM estimator, without interpolation <a class="cite" href="#pub-3">[3]</a>, and adaptive gradient descent
+            with increasing batches <a class="cite" href="#pub-4">[4]</a>. In both, the step size follows local smoothness
+            instead of one global constant.
+          </p>
+          <!-- Figure 2: drawn by src/figures/figure2.js; hidden when JavaScript is off -->
+          <figure class="figure" id="figure-2" aria-labelledby="figure-2-caption" hidden>
+            <div class="figure__main">
+              <div class="figure__plot">
+                <canvas
+                  class="figure__canvas figure__canvas--pointer"
+                  tabindex="0"
+                  role="button"
+                  aria-label="Plot of a full objective and a sampled objective along one search direction, against the step size eta. Backtracking tries the step eta zero and then 0.6 eta zero; both lie above the Armijo line on the sampled objective and are rejected. The step 0.36 eta zero lies below it and is accepted, and the iterate moves to x t plus 1 on the full objective. Click the plot or press Enter to replay with a new Armijo line."
+                ></canvas>
+              </div>
+              <div class="figure__bar">
+                <ul class="figure__legend">
+                  <li><span class="swatch swatch--accent" aria-hidden="true"></span>Full objective</li>
+                  <li><span class="swatch swatch--dash" aria-hidden="true"></span>Sampled objective</li>
+                  <li><span class="swatch swatch--guide" aria-hidden="true"></span>Armijo line</li>
+                </ul>
+              </div>
+            </div>
+            <div class="figure__side">
+              <figcaption class="figure__caption" id="figure-2-caption"><strong>Figure 2.</strong> Stochastic line search on a nonconvex problem.</figcaption>
+            </div>
+          </figure>
+        </article>
+
+        <article class="theme" id="geometry" aria-labelledby="geometry-h">
+          <h3 id="geometry-h">Geometry of learned representations</h3>
+          <p class="theme__text">
+            When embeddings are trained with cross-entropy to predict neighbouring nodes in a graph, their geometry can
+            reflect the shape of the graph. I study how this geometry depends on the loss and the model, using KKT
+            conditions and eigenvalue spectra.
+          </p>
+        </article>
+      </section>
+
+      <section class="section" id="background" aria-labelledby="background-h">
+        <h2 id="background-h">Background</h2>
+
+        <div class="group">
+          <h3 class="label">Education</h3>
+          <ul class="rows">
+            <li class="row"><span class="row__text">B.Sc., Honours Computer Science, Minor in Mathematics, University of British Columbia</span></li>
+          </ul>
+        </div>
+
+        <div class="group">
+          <h3 class="label">Awards</h3>
+          <ul class="rows">
+            <li class="row">
+              <span class="row__text">Work Learn International Undergraduate Research Award, UBC</span>
+              <span class="date">2026</span>
+            </li>
+            <li class="row">
+              <span class="row__text">Faculty of Science International Student Scholarship, UBC</span>
+              <span class="date">Dec 2025</span>
+            </li>
+            <li class="row">
+              <span class="row__text">Dean's Scholar, UBC</span>
+              <span class="date">2025–26</span>
+            </li>
+            <li class="row">
+              <span class="row__text">Dean's List, UBC</span>
+              <span class="date">2024–25</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="group">
+          <h3 class="label">Teaching</h3>
+          <ul class="rows">
+            <li class="row">
+              <span class="row__text">Teaching assistant, CPSC 406 Computational Optimization</span>
+              <span class="date">Jan – Apr 2026</span>
+            </li>
+            <li class="row">
+              <span class="row__text">Teaching assistant, CPSC 302 Numerical Computation for Algebraic Problems</span>
+              <span class="date">Sep – Dec 2025</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="group">
+          <h3 class="label">Talks</h3>
+          <ul class="rows">
+            <li class="row">
+              <span class="row__text">Poster, ICML 2026, for <a class="cite" href="#pub-1">[1]</a></span>
+              <span class="date">Jul 2026</span>
+            </li>
+            <li class="row">
+              <span class="row__text">Presenter, UBC Machine Learning Reading Group</span>
+              <span class="date">May 2026 – present</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>© 2026 JunHyun Kim · Last updated November 2026</span>
+        <button type="button" class="text-button" id="theme-toggle" hidden>Dark theme</button>
+      </footer>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
