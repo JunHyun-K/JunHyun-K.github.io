@@ -63,7 +63,7 @@
               <div class="pub__body">
                 <a class="pub__title" href="https://arxiv.org/abs/2609.15257">Improving the Last-Iterate Guarantees of Anytime Algorithms for Stochastic Monotone Variational Inequalities</a>
                 <span class="pub__meta"><strong>Jun-Hyun Kim</strong> and Ahmet Alacaoglu <span class="sep" aria-hidden="true">·</span> <em>Under review</em> <span class="sep" aria-hidden="true">·</span> <a href="https://arxiv.org/abs/2609.15257">arXiv:2609.15257</a></span>
-                <span class="pub__result">State-of-the-art anytime last-iterate rate <span class="math"><i>O</i>(<i>t</i><sup>−1/4</sup>)</span> for constrained stochastic monotone VIs with single-call, single-loop method, and the optimal <span class="math"><i>O</i>(<i>t</i><sup>−1/2</sup>)</span> with STORM variance reduction.</span>
+                <span class="pub__result">State-of-the-art anytime last-iterate rate <span class="math"><i>O</i>(<i>t</i><sup>−1/4</sup>)</span> for constrained stochastic monotone VIs with a single-call, single-loop method, and the optimal <span class="math"><i>O</i>(<i>t</i><sup>−1/2</sup>)</span> with STORM variance reduction.</span>
               </div>
             </li>
           </ol>
@@ -99,7 +99,7 @@
           <h3 id="minmax-h">Min–max problems and variational inequalities</h3>
           <p class="theme__text">
             Variational inequalities include min–max problems and the equilibrium conditions of games. I study stochastic
-            methods for them when the noise variance can grow with the iterate <a class="cite" href="#pub-1">[1]</a>, and
+            methods for them when the noise variance can grow with the iterate <a class="cite" href="#pub-1">[1]</a> <a class="cite" href="#pub-2">[2]</a>, and
             guarantees for the last iterate that hold at every iteration, without a horizon fixed in advance
             <a class="cite" href="#pub-2">[2]</a>.
           </p>
@@ -128,12 +128,12 @@
         </article>
 
         <article class="theme" id="stepsizes" aria-labelledby="stepsizes-h">
-          <h3 id="stepsizes-h">Step sizes from stochastic information</h3>
+          <h3 id="stepsizes-h">Stepsize using stochastic curvature information</h3>
           <p class="theme__text">
-            A line search adapts the step size to local curvature, but a step accepted on one sample need not decrease the
-            full objective. I study when step sizes chosen from samples still come with guarantees: a line search with the
+            A line search adapts the stepsize to local curvature, but a step accepted on one sample need not decrease the
+            full objective. I study when stepsizes chosen from samples still come with guarantees: a line search with the
             STORM estimator, without interpolation <a class="cite" href="#pub-3">[3]</a>, and adaptive gradient descent
-            with increasing batches <a class="cite" href="#pub-4">[4]</a>. In both, the step size follows local smoothness
+            with increasing batches <a class="cite" href="#pub-4">[4]</a>. In both, the stepsize follows local smoothness
             instead of one global constant.
           </p>
           <!-- Figure 2: drawn by src/figures/figure2.js; hidden when JavaScript is off -->
@@ -144,7 +144,7 @@
                   class="figure__canvas figure__canvas--pointer"
                   tabindex="0"
                   role="button"
-                  aria-label="Plot of a full objective and a sampled objective along one search direction, against the step size eta. Backtracking tries the step eta zero and then 0.6 eta zero; both lie above the Armijo line on the sampled objective and are rejected. The step 0.36 eta zero lies below it and is accepted, and the iterate moves to x t plus 1 on the full objective. Click the plot or press Enter to replay with a new Armijo line."
+                  aria-label="Plot of a full objective and a sampled objective along one search direction, against the stepsize eta. Backtracking tries the step eta zero and then 0.6 eta zero; both lie above the Armijo line on the sampled objective and are rejected. The step 0.36 eta zero lies below it and is accepted, and the iterate moves to x t plus 1 on the full objective. Click the plot or press Enter to replay with a new Armijo line."
                 ></canvas>
               </div>
               <div class="figure__bar">
@@ -178,6 +178,24 @@
           <h3 class="label">Education</h3>
           <ul class="rows">
             <li class="row"><span class="row__text">B.Sc., Honours Computer Science, Minor in Mathematics, University of British Columbia</span></li>
+          </ul>
+        </div>
+
+        <div class="group">
+          <h3 class="label">Research positions</h3>
+          <ul class="rows">
+            <li class="row">
+              <span class="row__text">Undergraduate research assistant, Department of Mathematics, with Ahmet Alacaoglu</span>
+              <span class="date">May 2025 – present</span>
+            </li>
+            <li class="row">
+              <span class="row__text">Summer research assistant, Department of Computer Science, with Mark Schmidt</span>
+              <span class="date">May – Aug 2026</span>
+            </li>
+            <li class="row">
+              <span class="row__text">Undergraduate researcher, Electrical and Computer Engineering, with Christos Thrampoulidis</span>
+              <span class="date">May 2026 – present</span>
+            </li>
           </ul>
         </div>
 

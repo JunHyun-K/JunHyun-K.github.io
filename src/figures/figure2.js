@@ -1,5 +1,5 @@
 // Figure 2: stochastic line search on a nonconvex problem (spec: 02_Figure_specs.md).
-// Backtracking along one search direction, against the step size η. Plays once when scrolled
+// Backtracking along one search direction, against the stepsize η. Plays once when scrolled
 // into view with the spec's Armijo constant c = 0.5 (also after every page load); a click, Enter
 // or Space replays it with a new random c from ARMIJO_C_RANGE (a new Armijo line). The real Armijo
 // test decides every trial; every click shows one or two rejections before the accepted step.
@@ -39,7 +39,7 @@ function describeRun(trials) {
   const middle = rejected.length
     ? `Backtracking tries ${rejected.join(' and then ')}; ${rejected.length > 1 ? 'both lie' : 'it lies'} above the Armijo line on the sampled objective and ${rejected.length > 1 ? 'are' : 'is'} rejected. The step ${accepted} lies below it and is accepted`
     : 'The first trial step, eta zero, already lies below the Armijo line on the sampled objective and is accepted';
-  return `Plot of a full objective and a sampled objective along one search direction, against the step size eta. ${middle}, and the iterate moves to x t plus 1 on the full objective. Click the plot or press Enter to replay with a new Armijo line.`;
+  return `Plot of a full objective and a sampled objective along one search direction, against the stepsize eta. ${middle}, and the iterate moves to x t plus 1 on the full objective. Click the plot or press Enter to replay with a new Armijo line.`;
 }
 
 export function initFigure2(figure) {
